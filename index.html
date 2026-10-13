@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Benfatmi | Portfolio Innovant</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <nav class="navbar" data-aos="fade-down">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <span class="logo-text">HB.</span>
+                </a>
+            
+            <div class="nav-controls">
+                <div class="profile-toggle">
+                    <button id="electronicsBtn" class="toggle-btn active">
+                        <i class="fa-solid fa-microchip"></i> Électronique
+                    </button>
+                    <button id="softwareBtn" class="toggle-btn">
+                        <i class="fa-solid fa-code"></i> Informatique
+                    </button>
+                </div>
+                
+                <button id="langToggle" class="icon-btn" title="Changer de langue">FR</button>
+                <button id="themeToggle" class="icon-btn" title="Changer de thème">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#home" class="nav-link">Accueil</a>
+            <a href="#projects" class="nav-link">Projets</a>
+            <a href="#education" class="nav-link">Formation</a>
+            <a href="#experience" class="nav-link">Expérience</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        
+        <section id="home" class="hero">
+            <div id="particles-js"></div>
+            
+            <div class="hero-container" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="hero-content bento-box">
+                    <h1 class="welcome-text">Bonjour, je suis <span class="highlight">Hamza</span></h1>
+                    <div id="typing-text" class="typing text-xl"></div>
+                    
+                    <div class="profile-description mt-6">
+                        <div id="electronics-desc" class="desc-content active">
+                            <div class="icon-wrapper"><i class="fa-solid fa-robot"></i></div>
+                            <h3>Électronique & Systèmes Embarqués</h3>
+                            <p>Spécialiste en conception de systèmes embarqués, IoT et robotique. Je donne vie au matériel.</p>
+                        </div>
+                        
+                        <div id="software-desc" class="desc-content">
+                            <div class="icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3>Développement Logiciel</h3>
+                            <p>Expert en développement d'applications web et solutions logicielles complètes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">Voir mes projets</a>
+                        <a href="#contact" class="btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <h2 class="section-title" data-aos="fade-up">Mes Projets</h2>
+            
+            <div class="projects-container bento-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-grid electronics-content active">
+                    </div>
+                <div class="project-grid software-content">
+                    </div>
+            </div>
+        </section>
+
+<!-- SECTION PARCOURS & CERTIFICATS -->
+<section id="parcours" class="section-container">
+    <div class="parcours-grid">
+        <!-- Colonne Gauche : Timeline Formation -->
+        <div class="formation-col">
+            <h2 class="section-title"><span class="glow-text" data-i18n="educationTitle">Formation</span></h2>
+            <div id="education-timeline" class="timeline-container">
+                <!-- Injecté via JS -->
+            </div>
+        </div>
+
+        <!-- Colonne Droite : Grille Certificats -->
+        <div class="certificats-col">
+            <h2 class="section-title"><span class="glow-text" data-i18n="certificatesTitle">Certificats</span></h2>
+            <div id="certificates-grid" class="cert-grid">
+                <!-- Injecté via JS -->
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="experience" class="section-padding">
+            <h2 class="section-title" data-aos="fade-up">Expérience Professionnelle</h2>
+            <div class="experience-grid bento-grid" data-aos="fade-up" data-aos-delay="200">
+                </div>
+        </section>
+
+        <section id="contact" class="section-padding contact-section">
+            <div class="contact-container bento-box" data-aos="zoom-in">
+                <h2 class="section-title">Discutons de votre projet</h2>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" required placeholder="Votre Nom">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" required placeholder="Votre Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" required placeholder="Votre Message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Hamza-Benfatmi/" target="_blank" class="social-icon" title="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/benfatmihamza/" target="_blank" class="social-icon" title="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:hamzabenfatmi10@gmail.com" class="social-icon" title="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <button id="openChatbot" class="chatbot-toggle shadow-glow">
+        <i class="fa-solid fa-robot"></i>
+    </button>
+    
+    <div id="chatbot" class="chatbot bento-box">
+        <div class="chatbot-header">
+            <span><i class="fa-solid fa-microchip"></i> Assistant IA</span>
+            <button id="closeChatbot" class="icon-btn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            </div>
+        <div class="chatbot-input-container">
+            <input type="text" class="chatbot-input" placeholder="Posez votre question..." id="chat-input">
+            <button id="sendMessageBtn" class="chatbot-send-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+<div id="project-modal" class="project-modal">
+        <div class="modal-content">
+            <button id="close-modal" class="back-btn">
+                <i class="fa-solid fa-arrow-left"></i> <span id="back-text">Retour aux projets</span>
+            </button>
+            
+            <div id="modal-body" class="modal-body">
+                </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // Initialisation de AOS (Animations on scroll)
+        AOS.init({
+            once: true, // L'animation ne se joue qu'une fois
+            offset: 100
+        });
+    </script>
+    <script src="script.js"></script>
+
+    <!-- Lightbox pour les images -->
+    <div id="image-lightbox" class="lightbox">
+        <span class="lightbox-close"><i class="fa-solid fa-xmark"></i></span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+</body>
+</html>
